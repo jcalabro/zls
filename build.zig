@@ -2,7 +2,7 @@ const std = @import("std");
 const builtin = @import("builtin");
 
 /// Must match the `version` in `build.zig.zon`. Add a `-dev` suffix when `zls_version_is_tagged == false`.
-const zls_version = std.SemanticVersion{ .major = 0, .minor = 12, .patch = 0 };
+const zls_version = std.SemanticVersion{ .major = 0, .minor = 13, .patch = 0 };
 /// set this to true when tagging a new ZLS release and then unset it on the next development cycle.
 const zls_version_is_tagged: bool = false;
 
@@ -10,7 +10,7 @@ const zls_version_is_tagged: bool = false;
 /// ComptimeStringMap: return a regular struct and optimize
 ///
 /// Must match the `minimum_zig_version` in `build.zig.zon`.
-const minimum_zig_version = "0.12.0";
+const minimum_zig_version = "0.13.0-dev.33+8af59d1f9";
 
 /// Specify the minimum Zig version that is required to run ZLS:
 /// Release 0.12.0
